@@ -1,0 +1,23 @@
+{
+  "name": "rcm-tinymce",
+  "homepage": "https://github.com/reliv/rcm-tinymce",
+  "description": "RCM Javascript library for TinyMCE",
+  "keywords": [
+    "javascipt",
+    "TinyMCE"
+  ],
+  "authors": [
+    "James Jervis"
+  ],
+  "license": "BSD-3-Clause",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
