@@ -12,21 +12,11 @@ module.exports = function (grunt) {
                         sourceMap: true
                     },
                     files: {
-                        'dist/<%= pkg.name %>.min.js': [
-                            'src/linkwithjqueryautocomplete/plugin.js',
-                            'src/rcmFileChooser/plugin.js',
-                        ]
-                    }
-                }
-            },
-            concat: {
-                options: {
-                },
-                dist: {
-                    files: {
-                        'dist/<%= pkg.name %>.js': [
-                            'src/linkwithjqueryautocomplete/plugin.js',
-                            'src/rcmFileChooser/plugin.js',
+                        'plugins/linkwithjqueryautocomplete/plugin.min.js': [
+                            'plugins/linkwithjqueryautocomplete/plugin.js'
+                        ],
+                        'plugins/rcmFileChooser/plugin.min.js': [
+                            'plugins/rcmFileChooser/plugin.js'
                         ]
                     }
                 }
@@ -36,9 +26,7 @@ module.exports = function (grunt) {
 
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-copy');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'concat']);
+    grunt.registerTask('default', ['uglify']);
 };
