@@ -14,9 +14,6 @@ module.exports = function (grunt) {
                     files: {
                         'plugins/linkwithjqueryautocomplete/plugin.min.js': [
                             'plugins/linkwithjqueryautocomplete/plugin.js'
-                        ],
-                        'plugins/rcmFileChooser/plugin.min.js': [
-                            'plugins/rcmFileChooser/plugin.js'
                         ]
                     }
                 }
